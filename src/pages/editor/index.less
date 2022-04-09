@@ -1,0 +1,74 @@
+.resumePage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #8bd3ff;
+
+  .container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .editor {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .editorContent {
+      overflow: scroll;
+      resize: none;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      background-color: transparent;
+      outline: none;
+      border: 1px dashed #ccc;
+    }
+
+    .editorContent::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .privew {
+    flex: 1;
+    padding: 20px;
+
+    .privewContent {
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      overflow-y: scroll;
+      user-select: none;
+
+      .symbol {
+        padding: 3px 2px 2px 2px;
+        background-color: black;
+        color: #fff;
+        border-radius: 4px;
+      }
+    }
+    .privewContent::-webkit-scrollbar {
+      display: none; /* Chrome Safari */
+    }
+  }
+}
+
+@media print {
+  .container {
+    overflow: visible !important;
+  }
+
+  &,
+  div {
+    display: block;
+    height: auto;
+    /* Reset to normalize for FireFox */
+  }
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+}

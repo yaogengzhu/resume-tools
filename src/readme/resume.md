@@ -1,108 +1,79 @@
-# A demo of `react-markdown`
+<h2 style="text-align:center">个人信息</h2>
 
-`react-markdown` is a markdown component for React.
+ - 龙风/男/2022 
+ - 本科/北极大学计算机系 
+ - 工作年限：3年
+ - Github：https:github.com/yaogengzhu
 
-👉 Changes are re-rendered as you type.
-
-👈 Try writing some markdown on the left.
-
-## Overview
-
-* Follows [CommonMark](https://commonmark.org)
-* Optionally follows [GitHub Flavored Markdown](https://github.github.com/gfm/)
-* Renders actual React elements instead of using `dangerouslySetInnerHTML`
-* Lets you define your own components (to render `MyHeading` instead of `h1`)
-* Has a lot of plugins
-
-## Table of contents
-
-Here is an example of a plugin in action
-([`remark-toc`](https://github.com/remarkjs/remark-toc)).
-This section is replaced by an actual table of contents.
-
-## Syntax highlighting
-
-Here is an example of a plugin to highlight code:
-[`rehype-highlight`](https://github.com/rehypejs/rehype-highlight).
-
-```js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import ReactMarkdown from 'react-markdown'
-import rehypeHighlight from 'rehype-highlight'
-
-ReactDOM.render(
-  <ReactMarkdown rehypePlugins={[rehypeHighlight]}>{'# Your markdown here'}</ReactMarkdown>,
-  document.querySelector('#content')
-)
-```
-
-Pretty neat, eh?
-
-## GitHub flavored markdown (GFM)
-
-For GFM, you can *also* use a plugin:
-[`remark-gfm`](https://github.com/remarkjs/react-markdown#use).
-It adds support for GitHub-specific extensions to the language:
-tables, strikethrough, tasklists, and literal URLs.
-
-These features **do not work by default**.
-👆 Use the toggle above to add the plugin.
-
-| Feature    | Support              |
-| ---------: | :------------------- |
-| CommonMark | 100%                 |
-| GFM        | 100% w/ `remark-gfm` |
-
-~~strikethrough~~
-
-* [ ] task list
-* [x] checked item
-
-https://example.com
-
-## HTML in markdown
-
-⚠️ HTML in markdown is quite unsafe, but if you want to support it, you can
-use [`rehype-raw`](https://github.com/rehypejs/rehype-raw).
-You should probably combine it with
-[`rehype-sanitize`](https://github.com/rehypejs/rehype-sanitize).
-
-<blockquote>
-  👆 Use the toggle above to add the plugin.
-</blockquote>
-
-## Components
-
-You can pass components to change things:
-
-```js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import ReactMarkdown from 'react-markdown'
-import MyFancyRule from './components/my-fancy-rule.js'
-
-ReactDOM.render(
-  <ReactMarkdown
-    components={{
-      // Use h2s instead of h1s
-      h1: 'h2',
-      // Use a component instead of hrs
-      hr: ({node, ...props}) => <MyFancyRule {...props} />
-    }}
-  >
-    # Your markdown here
-  </ReactMarkdown>,
-  document.querySelector('#content')
-)
-```
+ - 期望职位：PHP高级程序员，应用架构师
+ - 期望薪资：税前月薪15k~20k，特别喜欢的公司可例外
+ - 期望城市：北京
 
 
-## More info?
 
-Much more info is available in the
-[readme on GitHub](https://github.com/remarkjs/react-markdown)!
+# 工作经历
+（工作经历按逆序排列，最新的在最前边，按公司做一级分组，公司内按二级分组）
 
-***
+## ABC公司 （ 2012年9月 ~ 2014年9月 ）
 
-A component by [Espen Hovlandsdal](https://espen.codes/)
+### DEF项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### GHI项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### 其他项目
+
+（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）
+
+  
+## JKL公司 （ 2010年3月 ~ 2012年8月 ）
+
+### MNO项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### PQR项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### 其他项目
+
+（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）
+  
+  
+# 工作经历
+（工作经历按逆序排列，最新的在最前边，按公司做一级分组，公司内按二级分组）
+
+## ABC公司 （ 2012年9月 ~ 2014年9月 ）
+
+### DEF项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### GHI项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### 其他项目
+
+（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）
+
+  
+## JKL公司 （ 2010年3月 ~ 2012年8月 ）
+
+### MNO项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### PQR项目 
+我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+
+
+### 其他项目
+
+（每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。）
+  
+  
