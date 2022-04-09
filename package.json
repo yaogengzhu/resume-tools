@@ -6,6 +6,7 @@
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
+    "deploy": "deploy",
     "test:coverage": "umi-test --coverage"
   },
   "gitHooks": {
@@ -22,6 +23,7 @@
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
     "@umijs/preset-react": "1.x",
+    "jspdf": "^2.5.1",
     "react-markdown": "^8.0.2",
     "rehype-raw": "^6.1.1",
     "umi": "^3.3.12"
