@@ -2,7 +2,10 @@ import { defineConfig } from 'umi';
 
 export default defineConfig({
   title: '文档生成器',
-  publicPath: 'https://yaogengzhu.github.io/resume-tools/',
+  publicPath:
+    process.env.NODE_ENV === 'development'
+      ? '/'
+      : 'https://yaogengzhu.github.io/resume-tools/',
   nodeModulesTransform: {
     type: 'none',
   },
