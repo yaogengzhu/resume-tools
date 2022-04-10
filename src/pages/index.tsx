@@ -4,6 +4,7 @@ import rehypeRaw from 'rehype-raw';
 import resumeMd from '@/readme/resume.md';
 import './index.less';
 import DragBar from '@/components/dragBar/dragBar';
+import DragBox from '@/components/dragBox';
 
 const Index = () => {
   const [text, setText] = useState(resumeMd);
@@ -47,6 +48,11 @@ const Index = () => {
           </div>
         </div>
       </div>
+      <DragBox
+        onClick={() => {
+          window.print();
+        }}
+      />
     </div>
   );
 };
